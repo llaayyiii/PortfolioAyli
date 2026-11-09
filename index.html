@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurul Layli Digital Business</title>
+  <meta name="description" content="Portofolio Nurul Layli - Mahasiswa Bisnis Digital UTDI | UI/UX Designer | Web Developer. Menggabungkan desain, kode, dan komunikasi strategis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Ambient Blur Shapes (MD Section 0: 2-4 bentuk melayang pelan) -->
+  <div class="ambient-decorations" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- Navigation Bar -->
+    <header class="site-header">
+      <nav class="nav-container">
+        <a href="#hero" class="brand-logo">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Nurul Layli</span>
+          <span class="brand-tag">Digital Business</span>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active" data-i18n="nav.home">Beranda</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Keahlian</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proyek</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Pengalaman</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="nav.education">Pendidikan</a></li>
+          <li><a href="#awards" class="nav-link" data-i18n="nav.awards">Prestasi</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontak</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <!-- Language Toggle Button -->
+          <button id="langToggle" class="ctrl-pill-btn" aria-label="Ganti Bahasa" title="Ganti Bahasa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span id="langText">ID</span>
+          </button>
+
+          <!-- Theme Mode Toggle Button -->
+          <button id="themeToggle" class="ctrl-pill-btn" aria-label="Ganti Tema Gelap/Terang" title="Ganti Tema Gelap/Terang">
+            <span id="themeIcon" class="ctrl-icon-wrap">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+          </button>
+
+          <a href="#contact" class="btn-primary-pill" data-i18n="nav.cta">Hubungi Saya</a>
+
+          <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Menu Navigasi">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SECTION 1: HERO (Strictly Reference 2 Staggered Bento Layout) -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid">
+        <!-- Left Column: Typography, Dynamic Typing & CTAs -->
+        <div class="hero-content reveal-fade-up">
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/></svg>
+            <span data-i18n="hero.badge">Portofolio 2026 • Bisnis Digital & UI/UX</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span style="font-weight: 300; display: block; font-size: 0.55em; color: var(--text-secondary); letter-spacing: 0.05em;" data-i18n="hero.greeting">HALO, SAYA</span>
+            NURUL LAYLI
+          </h1>
+
+          <div class="hero-typed-wrapper">
+            <span class="typed-text" id="typedOutput">Web Developer</span>
+          </div>
+
+          <p class="hero-tagline" data-i18n="hero.tagline">
+            Mahasiswa Bisnis Digital di Universitas Teknologi Digital Indonesia (UTDI) yang menggabungkan desain intuitif, kode modern, dan komunikasi strategis.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary-pill" data-i18n="hero.btnProjects">
+              Lihat Proyek
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="CV/English%20CV_ATS_Nurul_Layli.pdf" download="English CV_ATS_Nurul_Layli.pdf" target="_blank" rel="noopener noreferrer" id="openCvBtn" class="btn-secondary-pill" data-i18n="hero.btnCv">
+              Download CV ↗
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/llaayyiii" target="_blank" rel="noopener noreferrer" class="hero-social-btn" title="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://instagram.com/ayllii_07" target="_blank" rel="noopener noreferrer" class="hero-social-btn" title="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="mailto:nurul.layli25@students.utdi.ac.id" class="hero-social-btn" title="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="https://wa.me/6285385384615" target="_blank" rel="noopener noreferrer" class="hero-social-btn" title="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Ethan Cole / Aarav Singh Style 3D Overlap Profile Photo (Pop-Out of Background Circle) -->
+        <div class="hero-ethan-stage reveal-fade-up">
+          <div class="ethan-avatar-container" id="heroPhotoCard">
+            <!-- 1. Ambient Glow Aura & Orbital Ring -->
+            <div class="ethan-orbit-ring" aria-hidden="true"></div>
+            <div class="ethan-ambient-glow" aria-hidden="true"></div>
+
+            <!-- 2. The 3D Background Circle / Arched Glass Backdrop -->
+            <div class="ethan-backdrop-circle" aria-hidden="true"></div>
+
+            <!-- 3. Photo Frame with 3D Overlap Effect (Kepala menyembul keluar dari lingkaran latar) -->
+            <div class="ethan-photo-clipper" id="photoPreviewWrap">
+              <img id="heroPhotoImg" src="foto ayli/foto 1/Elegant Hijab Fashion Portrait.png" alt="Nurul Layli" class="ethan-photo-img">
+            </div>
+
+            <!-- 4. Floating 3D Iridescent Orb with Sparkle (Aarav Singh Reference) -->
+            <div class="ethan-floating-orb" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color: #ffffff; filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.95));"><path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/></svg>
+            </div>
+
+            <!-- 5. Floating Glassmorphism Metric Cards (Aarav Singh Style) -->
+            <div class="ethan-float-card float-card-awards">
+              <div class="ethan-card-stat">4+</div>
+              <div class="ethan-card-label">Honors &<br>Awards</div>
+            </div>
+
+            <div class="ethan-float-card float-card-impact">
+              <div class="ethan-impact-header">
+                <span class="ethan-impact-title">Design Impact</span>
+                <span class="ethan-impact-rate">+100%</span>
+              </div>
+              <svg class="ethan-sparkline" width="96" height="24" viewBox="0 0 96 24" fill="none">
+                <path d="M2 18L22 13L44 17L68 7L94 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <!-- 6. Subtitle Pill Badge -->
+            <div class="ethan-badge-tag ethan-badge-bottom">
+              <span class="ethan-status-dot"></span>
+              <span class="ethan-badge-text">Nurul Layli • Bisnis Digital & UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1.5: HIGHLIGHTS KEAHLIAN & PRESTASI (Pindahan 4 Kartu dari Hero agar Bagian Atas Lega) -->
+    <section id="highlights" class="highlights-section">
+      <div class="highlights-container">
+        <div class="highlights-grid">
+          
+          <!-- Card 1: UI/UX Design -->
+          <div class="ref2-card orb-pink highlight-card reveal-fade-up">
+            <div class="ref2-orb-container">
+              <div class="ref2-orb-base"></div>
+              <div class="ref2-orb-overlay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              </div>
+            </div>
+            <h3 class="ref2-card-title">UI/UX Design</h3>
+            <p class="ref2-card-desc" data-i18n="hero.card1Desc">Desain Antarmuka Intuitif, Riset Pengguna & Prototyping Figma</p>
+          </div>
+
+          <!-- Card 2: Web Development -->
+          <div class="ref2-card orb-purple highlight-card reveal-fade-up delay-1">
+            <div class="ref2-orb-container">
+              <div class="ref2-orb-base"></div>
+              <div class="ref2-orb-overlay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+            </div>
+            <h3 class="ref2-card-title">Web Development</h3>
+            <p class="ref2-card-desc" data-i18n="hero.card2Desc">Aplikasi Web Responsif, Integrasi Supabase & Frontend Modern</p>
+          </div>
+
+          <!-- Card 3: 4+ Penghargaan -->
+          <div class="ref2-card orb-blue highlight-card reveal-fade-up delay-2">
+            <div class="ref2-orb-container">
+              <div class="ref2-orb-base"></div>
+              <div class="ref2-orb-overlay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+            </div>
+            <div class="highlight-badge-pill">4+ Honors</div>
+            <h3 class="ref2-card-title" data-i18n="hero.card3Title">4+ Penghargaan</h3>
+            <p class="ref2-card-desc" data-i18n="hero.card3Desc">Finalis IEEE YESIST12 & Peraih Perak iPEC Internasional</p>
+          </div>
+
+          <!-- Card 4: Public Speaking & PR -->
+          <div class="ref2-card orb-emerald highlight-card reveal-fade-up delay-3">
+            <div class="ref2-orb-container">
+              <div class="ref2-orb-base"></div>
+              <div class="ref2-orb-overlay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+              </div>
+            </div>
+            <h3 class="ref2-card-title">Public Relations</h3>
+            <p class="ref2-card-desc" data-i18n="hero.card4Desc">Public Relations HIMA, Mentor BDC & Master of Ceremonies</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TENTANG SAYA (About Me) -->
+    <section id="about" class="content-section">
+      <div class="section-header reveal-fade-up">
+        <span class="section-pill-tag" data-i18n="about.tag">PROFIL PRIBADI</span>
+        <h2 class="section-title" data-i18n="about.title">Tentang Saya</h2>
+        <p class="section-subtitle" data-i18n="about.subtitle">Mengenal lebih dekat dedikasi dan perjalanan saya di dunia bisnis digital & teknologi</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Profile Identity Card -->
+        <div class="bento-card profile-card reveal-fade-up">
+          <div class="profile-avatar-wrapper" id="aboutAvatarWrapper">
+            <div class="profile-avatar-inner" id="aboutAvatarInner">
+              <span id="aboutAvatarInitials" style="display: none;">NL</span>
+              <img id="aboutAvatarImg" src="foto ayli/foto 1/Elegant Hijab Fashion Portrait.png" alt="Nurul Layli" class="profile-avatar-img">
+            </div>
+            <div class="profile-status-badge" title="Tersedia untuk Kolaborasi"></div>
+          </div>
+          <h3 class="profile-name">Nurul Layli</h3>
+          <p class="profile-role" data-i18n="about.role">Mahasiswa Bisnis Digital | UI/UX Enthusiast</p>
+          
+          <div class="profile-meta-list">
+            <div class="profile-meta-item">
+              <span class="profile-meta-label" data-i18n="about.domicileLabel">Domisili</span>
+              <span class="profile-meta-value">Yogyakarta, Indonesia</span>
+            </div>
+            <div class="profile-meta-item">
+              <span class="profile-meta-label" data-i18n="about.statusLabel">Status Saat Ini</span>
+              <span class="profile-meta-value" data-i18n="about.statusVal">Mahasiswa Aktif</span>
+            </div>
+            <div class="profile-meta-item">
+              <span class="profile-meta-label" data-i18n="about.campusLabel">Kampus</span>
+              <span class="profile-meta-value">Universitas Teknologi Digital Indonesia Yogyakarta</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio Story & Hobbies -->
+        <div class="bento-card about-details reveal-fade-up delay-1">
+          <p class="bio-paragraph" data-i18n="about.p1">
+            Mahasiswa Bisnis Digital di Universitas Teknologi Digital Indonesia yang berfokus pada UI/UX. Saat ini saya aktif sebagai Public Relations di Himpunan Mahasiswa Bisnis Digital, mentor di Business Development Club, dan anggota tim media sosial Hackathon UTDI. Saya juga membangun personal branding melalui peran sebagai MC.
+          </p>
+          <p class="bio-paragraph" data-i18n="about.p2">
+            Saya selalu ingin terus belajar, berusaha, dan mencoba hal-hal baru.
+          </p>
+          <p class="bio-paragraph" data-i18n="about.p3">
+            Saat ini saya sedang mendalami keterampilan editing dan web development.
+          </p>
+
+          <div class="hobbies-wrapper">
+            <h4 class="hobbies-title" data-i18n="about.hobbiesTitle">Minat & Hobi:</h4>
+            <div class="hobbies-pills">
+              <span class="hobby-pill">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+                <span data-i18n="about.hobby1">Mendesain</span>
+              </span>
+              <span class="hobby-pill">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                <span data-i18n="about.hobby2">Bernyanyi</span>
+              </span>
+              <span class="hobby-pill">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span data-i18n="about.hobby3">Berkuda</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Quick Stats Bento -->
+          <div class="stats-bento-grid">
+            <div class="stat-card">
+              <div class="stat-number">5+</div>
+              <div class="stat-label" data-i18n="about.statProjects">Proyek Digital</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">2+</div>
+              <div class="stat-label" data-i18n="about.statExp">Tahun Pengalaman</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">4</div>
+              <div class="stat-label" data-i18n="about.statAwards">Penghargaan Bergengsi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: KEAHLIAN (Skills with Animated Progress Bars) -->
+    <section id="skills" class="content-section">
+      <div class="section-header reveal-fade-up">
+        <span class="section-pill-tag" data-i18n="skills.tag">KOMPETENSI</span>
+        <h2 class="section-title" data-i18n="skills.title">Keahlian & Penguasaan Tools</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">Kombinasi kemampuan teknis, instrumen desain modern, serta keahlian interpersonal</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Hard Skills with Animated Progress Bars -->
+        <div class="bento-card skill-card-group reveal-fade-up">
+          <h3 class="skill-group-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-indigo);"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span data-i18n="skills.hardTitle">Hard Skills</span>
+          </h3>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>UI/UX Design</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Web Development</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Public Speaking</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-progress="90"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Soft Skills -->
+        <div class="bento-card skill-card-group reveal-fade-up delay-1">
+          <h3 class="skill-group-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-indigo);"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <span data-i18n="skills.toolsTitle">Tools & Software</span>
+          </h3>
+          <div class="tools-badge-grid">
+            <span class="tool-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span>VS Code</span>
+            </span>
+            <span class="tool-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+              <span>Git</span>
+            </span>
+            <span class="tool-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+              <span>Figma</span>
+            </span>
+            <span class="tool-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/></svg>
+              <span>Canva</span>
+            </span>
+            <span class="tool-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              <span>Google Sheets</span>
+            </span>
+          </div>
+
+          <h3 class="skill-group-title" style="margin-top: 24px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-indigo);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-i18n="skills.softTitle">Soft Skills</span>
+          </h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span data-i18n="skills.soft1">Komunikasi</span>
+            </div>
+            <div class="soft-skill-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span data-i18n="skills.soft2">Kerja Tim</span>
+            </div>
+            <div class="soft-skill-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span data-i18n="skills.soft3">Manajemen Waktu</span>
+            </div>
+            <div class="soft-skill-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              <span data-i18n="skills.soft4">Ketelitian</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROYEK (Projects with Hover Effects & Filter Tabs) -->
+    <section id="projects" class="content-section">
+      <div class="section-header reveal-fade-up">
+        <span class="section-pill-tag" data-i18n="projects.tag">PORTFOLIO SHOWCASE</span>
+        <h2 class="section-title" data-i18n="projects.title">Proyek Pilihan</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Inisiatif produk digital, platform web, dan proposal kompetisi inovatif</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="project-filters reveal-fade-up">
+        <button class="filter-btn active" data-filter="all" data-i18n="projects.filterAll">Semua Proyek</button>
+        <button class="filter-btn" data-filter="web" data-i18n="projects.filterWeb">Web & App</button>
+        <button class="filter-btn" data-filter="innovation" data-i18n="projects.filterInno">Inovasi & Kompetisi</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Proyek 1: Loran Management -->
+        <article class="project-card reveal-fade-up" data-category="web">
+          <div class="project-thumb-box">
+            <div style="width:100%; height:100%; background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); display:flex; align-items:center; justify-content:center; gap:10px; color:#ffffff; font-weight:700; font-size:1.45rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              <span>Loran Management</span>
+            </div>
+            <span class="project-badge-cat">Web / QRIS</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Loran Management</h3>
+            <p class="project-desc" data-i18n="projects.p1Desc">
+              Aplikasi web untuk mencatat transaksi pembayaran jimpitan warga secara digital melalui QRIS, mengeliminasi risiko selisih kas dan pencatatan manual.
+            </p>
+            <div class="project-detail-box">
+              <div class="project-detail-row">
+                <strong data-i18n="projects.problemLabel">Masalah:</strong>
+                <span data-i18n="projects.p1Problem">Pencatatan manual & transaksi masuk tidak sesuai dengan kas.</span>
+              </div>
+              <div class="project-detail-row">
+                <strong data-i18n="projects.roleLabel">Peran:</strong> Frontend & Desainer
+              </div>
+              <div class="project-detail-row">
+                <strong data-i18n="projects.impactLabel">Dampak:</strong>
+                <span data-i18n="projects.p1Impact">Meminimalkan risiko uang hilang & menghasilkan rekap laporan otomatis.</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">QRIS API</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://llaayyiii.github.io/loranmanagement/" target="_blank" rel="noopener noreferrer" class="project-link-btn" data-i18n="projects.liveDemo">
+                Lihat Demo ↗
+              </a>
+              <a href="https://github.com/llaayyiii" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek 2: Hijab_fit -->
+        <article class="project-card reveal-fade-up delay-1" data-category="web">
+          <div class="project-thumb-box">
+            <img src="hijabfit foto/19e634eb-8c16-4760-82bf-a205adc541db.jpg" alt="Hijab_fit Hero Landing Page" class="project-thumb-img">
+            <span class="project-badge-cat">Web / E-Commerce</span>
+            <span class="project-award-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              <span data-i18n="projects.p2Award">Juara 2 Hackathon</span>
+            </span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Hijab_fit</h3>
+            <p class="project-desc" data-i18n="projects.p2Desc">
+              Landing page untuk brand hijab & modest activewear dengan tampilan hangat dan elegan yang menonjolkan produk buatan perajin lokal.
+            </p>
+            <div class="project-detail-box">
+              <div class="project-detail-row">
+                <strong data-i18n="projects.roleLabel">Peran:</strong> UI/UX & Frontend Developer
+              </div>
+              <div class="project-detail-row">
+                <strong data-i18n="projects.impactLabel">Dampak:</strong>
+                <span data-i18n="projects.p2Impact">Pesanan masuk otomatis & tersimpan rapi di database Supabase.</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Supabase</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://llaayyiii.github.io/Hija_bfitprofile/" target="_blank" rel="noopener noreferrer" class="project-link-btn" data-i18n="projects.liveDemo">
+                Lihat Demo ↗
+              </a>
+              <a href="https://github.com/llaayyiii" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek 3: Nutri-Share -->
+        <article class="project-card reveal-fade-up delay-2" data-category="innovation">
+          <div class="project-thumb-box">
+            <div style="width:100%; height:100%; background: linear-gradient(135deg, #065f46 0%, #047857 100%); display:flex; align-items:center; justify-content:center; gap:10px; color:#ffffff; font-weight:700; font-size:1.45rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <span>Nutri-Share</span>
+            </div>
+            <span class="project-badge-cat">Inovasi / Stunting</span>
+            <span class="project-award-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              <span>iPEC Silver & IEEE</span>
+            </span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Nutri-Share</h3>
+            <p class="project-desc" data-i18n="projects.p3Desc">
+              Platform penyaluran makanan strategis untuk mencegah stunting dan kekurangan gizi pada balita dan keluarga rentan.
+            </p>
+            <div class="project-detail-box">
+              <div class="project-detail-row">
+                <strong data-i18n="projects.roleLabel">Peran:</strong>
+                <span data-i18n="projects.p3Role">Menyusun proposal, perancangan presentasi, dan koordinasi tim.</span>
+              </div>
+              <div class="project-detail-row">
+                <strong data-i18n="projects.awardLabel">Pencapaian:</strong>
+                <span data-i18n="projects.p3Award">Finalis IEEE YESIST12 2026 Grand Finale & Anugerah Perak iPEC'26.</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Food Distribution</span>
+              <span class="tech-tag">Social Tech</span>
+              <span class="tech-tag">Pitch Deck</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-link-btn" style="color: var(--text-muted); cursor: default;" data-i18n="projects.competitionProject">Proyek Riset & Kompetisi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek 4: Ruang Aman -->
+        <article class="project-card reveal-fade-up" data-category="innovation">
+          <div class="project-thumb-box">
+            <div style="width:100%; height:100%; background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%); display:flex; align-items:center; justify-content:center; gap:10px; color:#ffffff; font-weight:700; font-size:1.45rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Ruang Aman</span>
+            </div>
+            <span class="project-badge-cat">Social Safety</span>
+            <span class="project-award-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              <span>Anugerah Perak</span>
+            </span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Ruang Aman</h3>
+            <p class="project-desc" data-i18n="projects.p4Desc">
+              Sistem pelaporan kekerasan berbasis web yang menjamin anonimitas penuh pelapor guna memberikan ruang perlindungan yang aman dan terpercaya.
+            </p>
+            <div class="project-detail-box">
+              <div class="project-detail-row">
+                <strong data-i18n="projects.roleLabel">Peran:</strong>
+                <span data-i18n="projects.p4Role">Menyusun proposal, editing video presentasi, & pembuatan slide deck.</span>
+              </div>
+              <div class="project-detail-row">
+                <strong data-i18n="projects.awardLabel">Pencapaian:</strong>
+                <span data-i18n="projects.p4Award">Anugerah Perak di iPEC'26 (Malaysia).</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Anonymous Reporting</span>
+              <span class="tech-tag">Web Security</span>
+              <span class="tech-tag">Video Editing</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-link-btn" style="color: var(--text-muted); cursor: default;" data-i18n="projects.competitionProject">Proyek Riset & Kompetisi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek 5: School Commerce -->
+        <article class="project-card reveal-fade-up delay-1" data-category="web">
+          <div class="project-thumb-box">
+            <div style="width:100%; height:100%; background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%); display:flex; align-items:center; justify-content:center; gap:10px; color:#ffffff; font-weight:700; font-size:1.45rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <span>School Commerce</span>
+            </div>
+            <span class="project-badge-cat">EdTech / E-Commerce</span>
+            <span class="project-award-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              <span>Silver METARISE</span>
+            </span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">School Commerce</h3>
+            <p class="project-desc" data-i18n="projects.p5Desc">
+              Platform e-commerce terdedikasi untuk ekosistem sekolah menengah atas (SMA), memfasilitasi transaksi aman bagi karya siswa dan kebutuhan belajar.
+            </p>
+            <div class="project-detail-box">
+              <div class="project-detail-row">
+                <strong data-i18n="projects.roleLabel">Peran:</strong>
+                <span data-i18n="projects.p5Role">Menyusun proposal, materi presentasi, dan mengoordinasikan tim.</span>
+              </div>
+              <div class="project-detail-row">
+                <strong data-i18n="projects.awardLabel">Pencapaian:</strong>
+                <span data-i18n="projects.p5Award">Silver Medal di METARISE 2025.</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">School Marketplace</span>
+              <span class="tech-tag">EdTech</span>
+              <span class="tech-tag">Business Plan</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-link-btn" style="color: var(--text-muted); cursor: default;" data-i18n="projects.competitionProject">Proyek Riset & Kompetisi</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PENGALAMAN (Organization & Leadership) -->
+    <section id="experience" class="content-section">
+      <div class="section-header reveal-fade-up">
+        <span class="section-pill-tag" data-i18n="exp.tag">REKAM JEJAK</span>
+        <h2 class="section-title" data-i18n="exp.title">Pengalaman Organisasi</h2>
+        <p class="section-subtitle" data-i18n="exp.subtitle">Kiprah kepemimpinan, komunikasi publik, dan kontribusi aktif di komunitas akademik</p>
+      </div>
+
+      <div class="exp-timeline">
+        <!-- Exp 1: Public Relations -->
+        <div class="exp-card reveal-fade-up">
+          <div class="exp-period-col">
+            <span class="exp-period-badge" data-i18n="exp.p1Period">Sep 2026 – Sekarang</span>
+            <h4 class="exp-org-name">Himpunan Mahasiswa Bisnis Digital</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Universitas Teknologi Digital Indonesia</p>
+          </div>
+          <div>
+            <h3 class="exp-role-title">Public Relations</h3>
+            <ul class="exp-tasks-list">
+              <li data-i18n="exp.p1Task1">Merencanakan dan menjalankan kampanye komunikasi strategis yang berhasil menjangkau 90+ orang mahasiswa dan audiens.</li>
+              <li data-i18n="exp.p1Task2">Menjadi penghubung utama antara organisasi, media rekanan, dan pembicara eksternal dalam perhelatan seminar nasional.</li>
+              <li data-i18n="exp.p1Task3">Mengoordinasikan rangkaian acara dan kesepakatan kolaborasi dengan 2 mitra eksternal resmi.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Exp 2: Mentor BDC -->
+        <div class="exp-card reveal-fade-up delay-1">
+          <div class="exp-period-col">
+            <span class="exp-period-badge" data-i18n="exp.p2Period">Okt 2026 – Sekarang</span>
+            <h4 class="exp-org-name">Business Development Club</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Universitas Teknologi Digital Indonesia Yogyakarta</p>
+          </div>
+          <div>
+            <h3 class="exp-role-title">Mentor</h3>
+            <ul class="exp-tasks-list">
+              <li data-i18n="exp.p2Task1">Membimbing anggota klub dalam mengeksplorasi dan memvalidasi ide bisnis, riset pasar komprehensif hingga business plan.</li>
+              <li data-i18n="exp.p2Task2">Membagikan materi dan memfasilitasi sesi interaktif strategi pengembangan usaha kepada 50+ peserta aktif.</li>
+              <li data-i18n="exp.p2Task3">Memberikan feedback kritis pada presentasi pitch deck anggota untuk program P2MW, kompetisi esai, dan business case.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Exp 3: Social Media Hackathon -->
+        <div class="exp-card reveal-fade-up delay-2">
+          <div class="exp-period-col">
+            <span class="exp-period-badge" data-i18n="exp.p3Period">Okt 2026 – Sekarang</span>
+            <h4 class="exp-org-name">Hackathon UTDI (HCC UTDI)</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Panitia Pelaksana</p>
+          </div>
+          <div>
+            <h3 class="exp-role-title" data-i18n="exp.p3Role">Tim Media Sosial</h3>
+            <ul class="exp-tasks-list">
+              <li data-i18n="exp.p3Task1">Merancang konsep, copywriting, serta penjadwalan konten promosi visual dan dokumentasi real-time di kanal media sosial.</li>
+              <li data-i18n="exp.p3Task2">Mempublikasikan info registrasi, guideline kompetisi, dan pengumuman pemenang sehingga meningkatkan partisipasi peserta.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: PENDIDIKAN (Education) -->
+    <section id="education" class="content-section">
+      <div class="section-header reveal-fade-up">
+        <span class="section-pill-tag" data-i18n="edu.tag">LATAR BELAKANG</span>
+        <h2 class="section-title" data-i18n="edu.title">Pendidikan Formal</h2>
+        <p class="section-subtitle" data-i18n="edu.subtitle">Fondasi akademis dan keahlian terstruktur yang saya tempuh</p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal-fade-up">
+          <span class="edu-year-badge">2025 – Sekarang</span>
+          <h3 class="edu-institution">Universitas Teknologi Digital Indonesia (UTDI)</h3>
+          <p class="edu-major">S1 Bisnis Digital — Yogyakarta</p>
+          <p class="edu-desc" data-i18n="edu.c1Desc">
+            Fokus pada transformasi bisnis berbasis digital, UI/UX design, perancangan platform e-commerce, serta analitik data. Aktif berkegiatan sebagai Mentor di Business Development Club (BDC) dan tim publikasi Hackathon UTDI.
+          </p>
+        </div>
+
+        <div class="edu-card reveal-fade-up delay-1">
+          <span class="edu-year-badge">Lulus 2025</span>
+          <h3 class="edu-institution">SMK Bani Muslim</h3>
+          <p class="edu-major">Pati, Jawa Tengah</p>
+          <p class="edu-desc" data-i18n="edu.c2Desc">
+            Menempuh pendidikan vokasi yang melatih kedisiplinan, dasar-dasar komputasi, kepemimpinan, dan kerja tim secara intensif sebelum melanjutkan studi di Universitas Teknologi Digital Indonesia Yogyakarta.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: SERTIFIKAT, PRESTASI, & PENGHARGAAN (Interactive Lightbox Modal) -->
+    <section id="awards" class="content-section">
+      <div class="section-header reveal-fade-up">
+        <span class="section-pill-tag" data-i18n="certs.tag">PENGAKUAN & PRESTASI</span>
+        <h2 class="section-title" data-i18n="certs.title">Sertifikat & Penghargaan</h2>
+        <p class="section-subtitle" data-i18n="certs.subtitle">Apresiasi kompetisi tingkat nasional & internasional. Klik pada kartu sertifikat untuk melihat detail dokumen lengkap.</p>
+      </div>
+
+      <div class="certs-grid">
+        <!-- Cert 1: IEEE YESIST12 2026 -->
+        <div class="cert-card reveal-fade-up" data-cert-img="serifikat/cd1fd212-206e-4fdd-b898-c80c3c9dc734.jpg" data-cert-title="Finalis Maker Fair Track — IEEE YESIST12 2026 Grand Finale" data-cert-org="IEEE Indonesia Section, iEXPLORE Foundation & Univ. Nusa Mandiri" data-cert-year="2026" data-cert-desc="Dianugerahkan kepada Nurul Layli atas keberhasilan sebagai Finalis Maker Fair Track pada ajang bergengsi IEEE YESIST12 Grand Finale dengan judul proyek Nutri-Share di BSI Convention Center.">
+          <div class="cert-preview-box">
+            <img src="serifikat/cd1fd212-206e-4fdd-b898-c80c3c9dc734.jpg" alt="IEEE YESIST12 Certificate" class="cert-thumb-img">
+            <div class="cert-zoom-overlay"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg><span style="font-size:0.9rem; margin-left:6px;" data-i18n="certs.view">Perbesar</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge-row">
+              <span class="cert-level-pill">IEEE Finalist</span>
+              <span class="cert-year">2026</span>
+            </div>
+            <h3 class="cert-title">Maker Fair Track, IEEE YESIST12 Grand Finale</h3>
+            <p class="cert-org">IEEE Indonesia Section & Univ. Nusa Mandiri</p>
+          </div>
+        </div>
+
+        <!-- Cert 2: iPEC'26 Nutrisi Share -->
+        <div class="cert-card reveal-fade-up delay-1" data-cert-img="serifikat/a7797faa-0cd5-4a25-8fcd-4a610525e855.jpg" data-cert-title="Anugerah Perak — iPEC'26 (Nutrisi Share)" data-cert-org="Kolej Komuniti Temerloh, Malaysia & Kementerian Pendidikan Tinggi" data-cert-year="2026" data-cert-desc="Sijil Anugerah Khas Penyertaan Antarabangsa: dianugerahkan kepada Nurul Layli atas pencapaian Anugerah Perak dalam Innovative Product Exhibition and Competition (iPEC'26) untuk proyek Nutrisi Share.">
+          <div class="cert-preview-box">
+            <img src="serifikat/a7797faa-0cd5-4a25-8fcd-4a610525e855.jpg" alt="iPEC26 Nutrisi Share Certificate" class="cert-thumb-img">
+            <div class="cert-zoom-overlay"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg><span style="font-size:0.9rem; margin-left:6px;" data-i18n="certs.view">Perbesar</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge-row">
+              <span class="cert-level-pill" style="color:#d97706;">Anugerah Perak</span>
+              <span class="cert-year">2026</span>
+            </div>
+            <h3 class="cert-title">Anugerah Perak — iPEC'26 (Nutrisi Share)</h3>
+            <p class="cert-org">Kolej Komuniti Temerloh, Malaysia</p>
+          </div>
+        </div>
+
+        <!-- Cert 3: iPEC'26 Ruang Aman -->
+        <div class="cert-card reveal-fade-up delay-2" data-cert-img="serifikat/ffaa5f44-8595-469a-9eff-41da06793f1d.jpg" data-cert-title="Anugerah Perak — iPEC'26 (Ruang Aman)" data-cert-org="Kolej Komuniti Temerloh, Malaysia & UTDI" data-cert-year="2026" data-cert-desc="Sijil Anugerah Khas Penyertaan Antarabangsa: dianugerahkan kepada Nurul Layli atas pencapaian Anugerah Perak dalam Innovative Product Exhibition and Competition (iPEC'26) untuk proyek Ruang Aman.">
+          <div class="cert-preview-box">
+            <img src="serifikat/ffaa5f44-8595-469a-9eff-41da06793f1d.jpg" alt="iPEC26 Ruang Aman Certificate" class="cert-thumb-img">
+            <div class="cert-zoom-overlay"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg><span style="font-size:0.9rem; margin-left:6px;" data-i18n="certs.view">Perbesar</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge-row">
+              <span class="cert-level-pill" style="color:#d97706;">Anugerah Perak</span>
+              <span class="cert-year">2026</span>
+            </div>
+            <h3 class="cert-title">Anugerah Perak — iPEC'26 (Ruang Aman)</h3>
+            <p class="cert-org">Kolej Komuniti Temerloh, Malaysia</p>
+          </div>
+        </div>
+
+        <!-- Cert 4: METARISE 2025 -->
+        <div class="cert-card reveal-fade-up delay-3" data-cert-img="serifikat/3b9663f6-3377-459a-badd-cfa7f39ce141.jpg" data-cert-title="Silver Medal — METARISE 2025 (School Commerce)" data-cert-org="Universiti Pendidikan Sultan Idris (UPSI) & UTDI" data-cert-year="2025" data-cert-desc="Certificate of Appreciation: Silver Medal proudly presented to Nurul Layli for outstanding achievement in project School Commerce in the 3rd Modern Education & Technology Advance in Research and Innovation for Sustainable Excellence (METARISE 2025).">
+          <div class="cert-preview-box">
+            <img src="serifikat/3b9663f6-3377-459a-badd-cfa7f39ce141.jpg" alt="METARISE 2025 Certificate" class="cert-thumb-img">
+            <div class="cert-zoom-overlay"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg><span style="font-size:0.9rem; margin-left:6px;" data-i18n="certs.view">Perbesar</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge-row">
+              <span class="cert-level-pill" style="color:#6366f1;">Silver Medal</span>
+              <span class="cert-year">2025</span>
+            </div>
+            <h3 class="cert-title">Silver Medal — METARISE 2025 (School Commerce)</h3>
+            <p class="cert-org">UPSI Malaysia & UTDI</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: KONTAK & SOSIAL MEDIA -->
+    <section id="contact" class="content-section">
+      <div class="section-header reveal-fade-up">
+        <span class="section-pill-tag" data-i18n="contact.tag">HUBUNGI SAYA</span>
+        <h2 class="section-title" data-i18n="contact.title">Mari Berkolaborasi</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Tertarik bekerja sama untuk proyek UI/UX, web development, atau kegiatan organisasi? Kirim pesan Anda di bawah ini.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contacts & Socials -->
+        <div class="contact-info-col reveal-fade-up">
+          <div class="contact-avail-pill">
+            <span class="contact-avail-dot"></span>
+            <span data-i18n="contact.avail">Terbuka untuk Freelance & Magang</span>
+          </div>
+
+          <a href="mailto:nurul.layli25@students.utdi.ac.id" class="contact-item-card">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Email Resmi</span>
+              <span class="contact-item-val">nurul.layli25@students.utdi.ac.id</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/6285385384615" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">WhatsApp</span>
+              <span class="contact-item-val">085385384615 (+62 853-8538-4615)</span>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/ayllii_07" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Instagram</span>
+              <span class="contact-item-val">@ayllii_07</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/llaayyiii" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">GitHub</span>
+              <span class="contact-item-val">github.com/llaayyiii</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-card reveal-fade-up delay-1">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="senderName" class="form-label" data-i18n="contact.formName">Nama Lengkap</label>
+              <input type="text" id="senderName" class="form-control" placeholder="Masukkan nama Anda..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail" class="form-label" data-i18n="contact.formEmail">Alamat Email</label>
+              <input type="email" id="senderEmail" class="form-control" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderSubject" class="form-label" data-i18n="contact.formSubject">Subjek / Perihal</label>
+              <input type="text" id="senderSubject" class="form-control" placeholder="Diskusi proyek / tawaran kolaborasi..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMsg" class="form-label" data-i18n="contact.formMsg">Pesan Anda</label>
+              <textarea id="senderMsg" class="form-control" placeholder="Tuliskan pesan atau penawaran Anda secara lengkap..." required></textarea>
+            </div>
+
+            <div class="form-btn-row">
+              <button type="submit" class="btn-primary-pill">
+                <span data-i18n="contact.btnSendEmail">Kirim via Email</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+              <button type="button" id="sendWhatsAppBtn" class="btn-secondary-pill">
+                <span data-i18n="contact.btnSendWA">Kirim via WhatsApp</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-copy">
+        © 2026 <strong>Nurul Layli</strong>. Digital Business & UI/UX Designer.
+      </div>
+      <div class="footer-nav">
+        <a href="#hero" data-i18n="nav.home">Beranda</a>
+        <a href="#about" data-i18n="nav.about">Tentang</a>
+        <a href="#skills" data-i18n="nav.skills">Keahlian</a>
+        <a href="#projects" data-i18n="nav.projects">Proyek</a>
+        <a href="#awards" data-i18n="nav.awards">Prestasi</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- CERTIFICATE LIGHTBOX MODAL -->
+  <div id="certModal" class="cert-modal" aria-hidden="true" role="dialog">
+    <div class="cert-modal-content">
+      <div class="cert-modal-header">
+        <h3 id="modalCertTitle" class="cert-modal-title">Sertifikat</h3>
+        <button id="modalCloseBtn" class="cert-modal-close" aria-label="Tutup Modal">&times;</button>
+      </div>
+      <div class="cert-modal-body">
+        <img id="modalCertImg" src="" alt="Certificate Full Preview" class="cert-modal-img">
+        <p id="modalCertDesc" class="cert-modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CV MODAL -->
+  <div id="cvModal" class="cert-modal" aria-hidden="true" role="dialog">
+    <div class="cert-modal-content" style="max-width: 640px;">
+      <div class="cert-modal-header">
+        <h3 class="cert-modal-title" data-i18n="cv.modalTitle">Curriculum Vitae — Nurul Layli</h3>
+        <button id="cvModalClose" class="cert-modal-close" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="cert-modal-body" style="text-align: left;">
+        <div style="background: var(--bg-card-secondary); padding: 20px; border-radius: 16px; margin-bottom: 20px;">
+          <h4 style="margin-bottom: 6px;">Nurul Layli</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">Mahasiswa Bisnis Digital UTDI | UI/UX Designer | Web Developer</p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Email: nurul.layli25@students.utdi.ac.id | WhatsApp: 085385384615</p>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;" data-i18n="cv.modalNote">
+          Ringkasan profil profesional, keahlian desain UI/UX, pengalaman organisasi HM Bisnis Digital & Mentor BDC, serta penghargaan METARISE, iPEC, dan IEEE YESIST12 siap diunduh atau dicetak.
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: flex-end; flex-wrap: wrap;">
+          <button onclick="window.print()" class="btn-secondary-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            <span data-i18n="cv.btnPrint">Cetak / Simpan PDF</span>
+          </button>
+          <a href="CV/English%20CV_ATS_Nurul_Layli.pdf" download="English CV_ATS_Nurul_Layli.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary-pill">
+            <span data-i18n="cv.btnReq">Download File CV ATS (PDF)</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Notification Toast -->
+  <div id="portfolioToast" class="portfolio-toast" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
