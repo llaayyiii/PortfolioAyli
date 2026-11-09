@@ -442,7 +442,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('navMenu');
 
   if (mobileMenuBtn && navMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       navMenu.classList.toggle('open');
     });
 
@@ -450,6 +451,20 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('open');
       });
+    });
+
+    // Close menu when tapping outside on mobile
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        navMenu.classList.remove('open');
+      }
+    });
+
+    // Close menu on resize back to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1080 && navMenu.classList.contains('open')) {
+        navMenu.classList.remove('open');
+      }
     });
   }
 
