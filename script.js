@@ -98,6 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
       "projects.p5Desc": "Platform e-commerce terdedikasi untuk ekosistem sekolah menengah atas (SMA), memfasilitasi transaksi aman bagi karya siswa dan kebutuhan belajar.",
       "projects.p5Role": "Menyusun proposal, materi presentasi, dan mengoordinasikan tim.",
       "projects.p5Award": "Silver Medal di METARISE 2025.",
+      "projects.filterEdTech": "EdTech",
+      "projects.p6Award": "Anugerah Gangsa",
+      "projects.p6Desc": "Media belajar berbasis Generative AI yang mensimulasikan bank mini syariah untuk siswa SMK, dengan peran Customer Service, Teller, dan Account Officer.",
+      "projects.p6Role": "Ketua tim, penyusun proposal, dan editor video presentasi.",
+      "projects.p6AwardDetail": "Anugerah Gangsa (perunggu) di iPEC'26 (Malaysia).",
+      "projects.viewDetail": "Detail Inovasi ↗",
+      "projects.watchVideo": "Video YouTube ↗",
+      "projects.watchVideoModal": "Tonton Video Presentasi di YouTube ↗",
 
       "exp.tag": "REKAM JEJAK",
       "exp.title": "Pengalaman Organisasi",
@@ -129,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "contact.tag": "HUBUNGI SAYA",
       "contact.title": "Mari Berkolaborasi",
       "contact.subtitle": "Tertarik bekerja sama untuk proyek UI/UX, web development, atau kegiatan organisasi? Kirim pesan Anda di bawah ini.",
-      "contact.avail": "Terbuka untuk Freelance & Magang",
+      "contact.avail": "Terbuka untuk Freelance, Magang & Remote Work",
       "contact.formName": "Nama Lengkap",
       "contact.formEmail": "Alamat Email",
       "contact.formSubject": "Subjek / Perihal",
@@ -231,6 +239,14 @@ document.addEventListener('DOMContentLoaded', () => {
       "projects.p5Desc": "Dedicated e-commerce marketplace for high school ecosystems, facilitating safe commerce for student works and supplies.",
       "projects.p5Role": "Proposal formulation, deck design, and overall team management.",
       "projects.p5Award": "Silver Medal at METARISE 2025.",
+      "projects.filterEdTech": "EdTech",
+      "projects.p6Award": "Bronze Award",
+      "projects.p6Desc": "Generative AI-powered interactive learning platform simulating an Islamic mini-bank for vocational students across Customer Service, Teller, and Account Officer roles.",
+      "projects.p6Role": "Team Leader, proposal author, and presentation video editor.",
+      "projects.p6AwardDetail": "Bronze Award at iPEC'26 (Malaysia).",
+      "projects.viewDetail": "Innovation Details ↗",
+      "projects.watchVideo": "YouTube Video ↗",
+      "projects.watchVideoModal": "Watch Presentation Video on YouTube ↗",
 
       "exp.tag": "TRACK RECORD",
       "exp.title": "Organizational Leadership",
@@ -262,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "contact.tag": "CONTACT ME",
       "contact.title": "Let's Collaborate",
       "contact.subtitle": "Interested in partnering for UI/UX design, web development, or organizational initiatives? Drop a message below.",
-      "contact.avail": "Available for Freelance & Internships",
+      "contact.avail": "Available for Freelance, Internships & Remote Work",
       "contact.formName": "Full Name",
       "contact.formEmail": "Email Address",
       "contact.formSubject": "Subject",
@@ -502,7 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       projectCards.forEach(card => {
         const cat = card.getAttribute('data-category');
-        if (filter === 'all' || cat === filter) {
+        if (filter === 'all' || cat === filter || (cat && cat.split(' ').includes(filter))) {
           card.style.display = 'flex';
           setTimeout(() => {
             card.style.opacity = '1';
@@ -586,11 +602,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Escape key closes modals
+  // ===================================================================
+  // 8.5 SMARTBANK SYARIAH AI DETAIL MODAL
+  // ===================================================================
+  const smartBankModal = document.getElementById('smartBankModal');
+  const openSmartBankModalBtn = document.getElementById('openSmartBankModalBtn');
+  const smartBankModalClose = document.getElementById('smartBankModalClose');
+
+  function openSmartBankModal() {
+    if (smartBankModal) {
+      smartBankModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeSmartBankModal() {
+    if (smartBankModal) {
+      smartBankModal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  }
+
+  if (openSmartBankModalBtn) {
+    openSmartBankModalBtn.addEventListener('click', openSmartBankModal);
+  }
+
+  if (smartBankModalClose) {
+    smartBankModalClose.addEventListener('click', closeSmartBankModal);
+  }
+
+  if (smartBankModal) {
+    smartBankModal.addEventListener('click', (e) => {
+      if (e.target === smartBankModal) closeSmartBankModal();
+    });
+  }
+
+  // Escape key closes all modals
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeCertModal();
       closeCvModal();
+      closeSmartBankModal();
     }
   });
 
