@@ -656,64 +656,180 @@
       </div>
     </section>
 
-    <!-- SECTION 5: PENGALAMAN (Organization & Leadership) -->
+    <!-- SECTION 5: PENGALAMAN (Organization, Committee, Public Speaking & International) -->
     <section id="experience" class="content-section">
       <div class="section-header reveal-fade-up">
         <span class="section-pill-tag" data-i18n="exp.tag">REKAM JEJAK</span>
-        <h2 class="section-title" data-i18n="exp.title">Pengalaman Organisasi</h2>
-        <p class="section-subtitle" data-i18n="exp.subtitle">Kiprah kepemimpinan, komunikasi publik, dan kontribusi aktif di komunitas akademik</p>
+        <h2 class="section-title" data-i18n="exp.title">Pengalaman Organisasi & Kepanitiaan</h2>
+        <p class="section-subtitle" data-i18n="exp.subtitle">Kiprah kepemimpinan, komunikasi publik, kepanitiaan, dan kontribusi aktif di komunitas akademik serta internasional</p>
+      </div>
+
+      <!-- Category Filter Tabs untuk Pengalaman -->
+      <div class="exp-filters reveal-fade-up">
+        <button type="button" class="exp-filter-btn active" data-exp-filter="all" data-i18n="exp.filterAll">Semua</button>
+        <button type="button" class="exp-filter-btn" data-exp-filter="organisasi" data-i18n="exp.filterOrg">Organisasi</button>
+        <button type="button" class="exp-filter-btn" data-exp-filter="kepanitiaan" data-i18n="exp.filterComm">Kepanitiaan</button>
+        <button type="button" class="exp-filter-btn" data-exp-filter="public-speaking" data-i18n="exp.filterSpeak">Public Speaking</button>
+        <button type="button" class="exp-filter-btn" data-exp-filter="internasional" data-i18n="exp.filterIntl">Internasional</button>
       </div>
 
       <div class="exp-timeline">
-        <!-- Exp 1: Public Relations -->
-        <div class="exp-card reveal-fade-up">
+        <!-- Exp 1: Public Relations (Organisasi) -->
+        <div class="exp-card reveal-fade-up" data-category="organisasi">
           <div class="exp-period-col">
             <span class="exp-period-badge" data-i18n="exp.p1Period">Sep 2026 – Sekarang</span>
+            <div class="exp-cat-tags">
+              <span class="exp-cat-badge" data-i18n="exp.catOrg">Organisasi</span>
+            </div>
             <h4 class="exp-org-name">Himpunan Mahasiswa Bisnis Digital</h4>
             <p style="font-size:0.8rem; color:var(--text-muted);">Universitas Teknologi Digital Indonesia</p>
           </div>
           <div>
-            <h3 class="exp-role-title">Public Relations</h3>
+            <h3 class="exp-role-title" data-i18n="exp.p1Role">Public Relations</h3>
             <ul class="exp-tasks-list">
-              <li data-i18n="exp.p1Task1">Merencanakan dan menjalankan kampanye komunikasi strategis yang berhasil menjangkau 90+ orang mahasiswa dan audiens.</li>
-              <li data-i18n="exp.p1Task2">Menjadi penghubung utama antara organisasi, media rekanan, dan pembicara eksternal dalam perhelatan seminar nasional.</li>
-              <li data-i18n="exp.p1Task3">Mengoordinasikan rangkaian acara dan kesepakatan kolaborasi dengan 2 mitra eksternal resmi.</li>
+              <li data-i18n="exp.p1Task1">Merencanakan dan memimpin kampanye komunikasi strategis yang menjangkau 90+ mahasiswa dan pemangku kepentingan.</li>
+              <li data-i18n="exp.p1Task2">Menjadi penghubung utama antara himpunan, mitra media, dan pembicara untuk seminar nasional.</li>
+              <li data-i18n="exp.p1Task3">Mengoordinasikan alur acara dan menjalin kerja sama dengan 2 mitra eksternal resmi.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Exp 2: Mentor BDC -->
-        <div class="exp-card reveal-fade-up delay-1">
+        <!-- Exp 2: Mentor BDC (Organisasi) -->
+        <div class="exp-card reveal-fade-up delay-1" data-category="organisasi">
           <div class="exp-period-col">
             <span class="exp-period-badge" data-i18n="exp.p2Period">Okt 2026 – Sekarang</span>
+            <div class="exp-cat-tags">
+              <span class="exp-cat-badge" data-i18n="exp.catOrg">Organisasi</span>
+            </div>
             <h4 class="exp-org-name">Business Development Club</h4>
             <p style="font-size:0.8rem; color:var(--text-muted);">Universitas Teknologi Digital Indonesia Yogyakarta</p>
           </div>
           <div>
-            <h3 class="exp-role-title">Mentor</h3>
+            <h3 class="exp-role-title" data-i18n="exp.p2Role">Mentor</h3>
             <ul class="exp-tasks-list">
-              <li data-i18n="exp.p2Task1">Membimbing anggota klub dalam mengeksplorasi dan memvalidasi ide bisnis, riset pasar komprehensif hingga business plan.</li>
-              <li data-i18n="exp.p2Task2">Membagikan materi dan memfasilitasi sesi interaktif strategi pengembangan usaha kepada 50+ peserta aktif.</li>
-              <li data-i18n="exp.p2Task3">Memberikan feedback kritis pada presentasi pitch deck anggota untuk program P2MW, kompetisi esai, dan business case.</li>
+              <li data-i18n="exp.p2Task1">Membimbing anggota klub dari riset pasar, validasi ide, sampai penyusunan rencana bisnis.</li>
+              <li data-i18n="exp.p2Task2">Memberikan workshop interaktif tentang strategi pertumbuhan kepada 50+ mahasiswa wirausaha aktif.</li>
+              <li data-i18n="exp.p2Task3">Memberi masukan pada pitch deck untuk P2MW, essay competition, dan business case nasional.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Exp 3: Social Media Hackathon -->
-        <div class="exp-card reveal-fade-up delay-2">
+        <!-- Exp 3: Social Media Team (Kepanitiaan) -->
+        <div class="exp-card reveal-fade-up delay-2" data-category="kepanitiaan">
           <div class="exp-period-col">
             <span class="exp-period-badge" data-i18n="exp.p3Period">Okt 2026 – Sekarang</span>
+            <div class="exp-cat-tags">
+              <span class="exp-cat-badge" data-i18n="exp.catComm">Kepanitiaan</span>
+            </div>
             <h4 class="exp-org-name">Hackathon UTDI (HCC UTDI)</h4>
-            <p style="font-size:0.8rem; color:var(--text-muted);">Panitia Pelaksana</p>
+            <p style="font-size:0.8rem; color:var(--text-muted);" data-i18n="exp.p3Note">Panitia Pelaksana</p>
           </div>
           <div>
-            <h3 class="exp-role-title" data-i18n="exp.p3Role">Tim Media Sosial</h3>
+            <h3 class="exp-role-title" data-i18n="exp.p3Role">Social Media Team</h3>
             <ul class="exp-tasks-list">
-              <li data-i18n="exp.p3Task1">Merancang konsep, copywriting, serta penjadwalan konten promosi visual dan dokumentasi real-time di kanal media sosial.</li>
-              <li data-i18n="exp.p3Task2">Mempublikasikan info registrasi, guideline kompetisi, dan pengumuman pemenang sehingga meningkatkan partisipasi peserta.</li>
+              <li data-i18n="exp.p3Task1">Merancang konsep konten, copywriting, dan kalender visual untuk liputan real-time di berbagai platform.</li>
+              <li data-i18n="exp.p3Task2">Mempublikasikan pengumuman pendaftaran dan panduan agar jumlah peserta maksimal.</li>
             </ul>
           </div>
         </div>
+
+        <!-- Exp 4: Podcast Panelist (Public Speaking & Internasional) -->
+        <div class="exp-card reveal-fade-up" data-category="public-speaking internasional">
+          <div class="exp-period-col">
+            <span class="exp-period-badge" data-i18n="exp.p4Period">Okt 2026</span>
+            <div class="exp-cat-tags">
+              <span class="exp-cat-badge" data-i18n="exp.catSpeak">Public Speaking</span>
+              <span class="exp-cat-badge" data-i18n="exp.catIntl">Internasional</span>
+            </div>
+            <h4 class="exp-org-name">Cross-Border Podcast with Unisel Students</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Universiti Selangor (Unisel), Malaysia</p>
+          </div>
+          <div>
+            <h3 class="exp-role-title" data-i18n="exp.p4Role">Panelist 1</h3>
+            <ul class="exp-tasks-list">
+              <li data-i18n="exp.p4Task1">Membahas &quot;Humanising Education &amp; Sustaining Integrity in the Digital Age&quot; dalam sesi diskusi lintas negara.</li>
+              <li data-i18n="exp.p4Task2">Menyampaikan sudut pandang tentang digitalisasi dan AI kepada 30 peserta.</li>
+            </ul>
+            <!-- Tombol Opsional Dengarkan Podcast -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="exp-action-btn" id="podcastListenBtn" style="display: none;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+              </svg>
+              <span data-i18n="exp.listenBtn">Dengarkan ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Exp 5: Exchange Student (Internasional) -->
+        <div class="exp-card reveal-fade-up delay-1" data-category="internasional">
+          <div class="exp-period-col">
+            <span class="exp-period-badge" data-i18n="exp.p5Period">Agu 2026 – Nov 2026 (1 Agu – 1 Nov 2026, 3 bulan)</span>
+            <div class="exp-cat-tags">
+              <span class="exp-cat-badge" data-i18n="exp.catIntl">Internasional</span>
+            </div>
+            <h4 class="exp-org-name">Global Exchange Malaysia (GEM)</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Universiti Selangor (Unisel), Malaysia</p>
+          </div>
+          <div>
+            <h3 class="exp-role-title" data-i18n="exp.p5Role">Exchange Student</h3>
+            <ul class="exp-tasks-list">
+              <li data-i18n="exp.p5Task1">Mengikuti kegiatan akademik dan budaya bersama mahasiswa Unisel selama pertukaran 3 bulan.</li>
+              <li data-i18n="exp.p5Task2">Mengembangkan kemampuan komunikasi lintas budaya dan jaringan internasional.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Exp 6: Event Committee Member (Kepanitiaan) -->
+        <div class="exp-card reveal-fade-up delay-2" data-category="kepanitiaan">
+          <div class="exp-period-col">
+            <span class="exp-period-badge" data-i18n="exp.p6Period">13 Des 2025</span>
+            <div class="exp-cat-tags">
+              <span class="exp-cat-badge" data-i18n="exp.catComm">Kepanitiaan</span>
+            </div>
+            <h4 class="exp-org-name">KIP-K Force Community</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);" data-i18n="exp.p6Note">Seminar Committee (Panitia Pelaksana)</p>
+          </div>
+          <div>
+            <h3 class="exp-role-title" data-i18n="exp.p6Role">Event Committee Member, Event Division</h3>
+            <ul class="exp-tasks-list">
+              <li data-i18n="exp.p6Task1">Merancang konsep acara, teknis acara, dan jalannya acara.</li>
+              <li data-i18n="exp.p6Task2">Mengoordinasikan kelancaran pelaksanaan seminar pada hari acara.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Exp 7: Master of Ceremony (Public Speaking & Organisasi) -->
+        <div class="exp-card reveal-fade-up" data-category="public-speaking organisasi">
+          <div class="exp-period-col">
+            <span class="exp-period-badge" data-i18n="exp.p7Period">2025 – 2026</span>
+            <div class="exp-cat-tags">
+              <span class="exp-cat-badge" data-i18n="exp.catSpeak">Public Speaking</span>
+              <span class="exp-cat-badge" data-i18n="exp.catOrg">Organisasi</span>
+            </div>
+            <h4 class="exp-org-name">UKM Taekwondo</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Universitas Teknologi Digital Indonesia</p>
+          </div>
+          <div>
+            <h3 class="exp-role-title" data-i18n="exp.p7Role">Master of Ceremony</h3>
+            <ul class="exp-tasks-list">
+              <li data-i18n="exp.p7Task1">Memandu seminar &quot;Technology with a Soul in the Digital Era&quot; dengan 90 peserta.</li>
+              <li data-i18n="exp.p7Task2">Memandu Rapat Anggota Tahunan UKM Taekwondo.</li>
+              <li data-i18n="exp.p7Task3">Membangun personal branding lewat kemampuan public speaking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol "Lihat lebih banyak / Show more" -->
+      <div class="exp-more-wrapper">
+        <button type="button" class="btn-exp-more" id="btnExpMore">
+          <span id="expMoreText" data-i18n="exp.showMore">Lihat lebih banyak</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
       </div>
     </section>
 

@@ -1806,6 +1806,38 @@ body {
   margin: 0 auto;
 }
 
+/* Category Filter Tabs for Experience */
+.exp-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.exp-filter-btn {
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  background: var(--pill-bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.exp-filter-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.exp-filter-btn.active {
+  background: var(--pill-active-bg);
+  color: var(--pill-active-text);
+  border-color: transparent;
+}
+
 .exp-card {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -1815,12 +1847,20 @@ body {
   border-radius: var(--radius-card);
   padding: 32px;
   box-shadow: var(--shadow-card);
-  transition: all var(--transition-fast);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.25s ease;
 }
 
 .exp-card:hover {
   transform: translateY(-4px);
   border-color: var(--border-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.exp-card.is-exp-hidden {
+  display: none !important;
 }
 
 .exp-period-col {
@@ -1834,17 +1874,51 @@ body {
 .exp-period-badge {
   display: inline-block;
   padding: 6px 14px;
-  background: var(--pill-bg);
+  background: #ede9fe;
   border-radius: var(--radius-pill);
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--accent-indigo);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   width: fit-content;
+  border: 1px solid rgba(196, 181, 253, 0.5);
+}
+
+[data-theme="dark"] .exp-period-badge {
+  background: rgba(124, 58, 237, 0.22);
+  color: #c4b5fd;
+  border-color: rgba(124, 58, 237, 0.4);
+}
+
+/* Category Badges on Card */
+.exp-cat-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.exp-cat-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--accent-indigo);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+[data-theme="dark"] .exp-cat-badge {
+  background: rgba(99, 102, 241, 0.18);
+  color: #a5b4fc;
+  border-color: rgba(99, 102, 241, 0.35);
 }
 
 .exp-org-name {
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   font-weight: 700;
   color: var(--text-primary);
   line-height: 1.4;
@@ -1879,6 +1953,71 @@ body {
   top: 0;
   color: var(--accent-indigo);
   font-weight: 800;
+}
+
+/* Tombol Aksi Opsional (Dengarkan Podcast) */
+.exp-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 8px 18px;
+  background: var(--pill-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  width: fit-content;
+  transition: all var(--transition-fast);
+}
+
+.exp-action-btn:hover {
+  background: var(--pill-active-bg);
+  border-color: transparent;
+  color: var(--pill-active-text);
+  transform: translateX(3px);
+}
+
+/* Tombol Lihat Lebih Banyak */
+.exp-more-wrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-exp-more {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-card);
+  padding: 12px 28px;
+  border-radius: var(--radius-pill);
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-subtle);
+  transition: all var(--transition-fast);
+}
+
+.btn-exp-more:hover {
+  background: var(--pill-active-bg);
+  border-color: transparent;
+  color: var(--pill-active-text);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+.btn-exp-more svg {
+  transition: transform 0.25s ease;
+}
+
+.btn-exp-more.is-expanded svg {
+  transform: rotate(180deg);
 }
 
 /* ===================================================================
@@ -2880,13 +3019,15 @@ textarea.form-control {
     padding: 14px;
   }
 
-  /* Projects Section HP */
-  .project-filters {
+  /* Projects & Experience Section HP */
+  .project-filters,
+  .exp-filters {
     gap: 6px;
     margin-bottom: 28px;
   }
 
-  .filter-btn {
+  .filter-btn,
+  .exp-filter-btn {
     padding: 8px 14px;
     font-size: 0.8rem;
   }

@@ -108,20 +108,67 @@ document.addEventListener('DOMContentLoaded', () => {
       "projects.watchVideoModal": "Tonton Video Presentasi di YouTube ↗",
 
       "exp.tag": "REKAM JEJAK",
-      "exp.title": "Pengalaman Organisasi",
-      "exp.subtitle": "Kiprah kepemimpinan, komunikasi publik, dan kontribusi aktif di komunitas akademik",
+      "exp.title": "Pengalaman Organisasi & Kepanitiaan",
+      "exp.subtitle": "Kiprah kepemimpinan, komunikasi publik, kepanitiaan, dan kontribusi aktif di komunitas akademik serta internasional",
+      "exp.filterAll": "Semua",
+      "exp.filterOrg": "Organisasi",
+      "exp.filterComm": "Kepanitiaan",
+      "exp.filterSpeak": "Public Speaking",
+      "exp.filterIntl": "Internasional",
+      "exp.catOrg": "Organisasi",
+      "exp.catComm": "Kepanitiaan",
+      "exp.catSpeak": "Public Speaking",
+      "exp.catIntl": "Internasional",
+      "exp.showMore": "Lihat lebih banyak",
+      "exp.showLess": "Tutup sebagian",
+      "exp.listenBtn": "Dengarkan ↗",
+
+      // Kartu 1: Public Relations
       "exp.p1Period": "Sep 2026 – Sekarang",
-      "exp.p1Task1": "Merencanakan dan menjalankan kampanye komunikasi strategis yang berhasil menjangkau 90+ orang mahasiswa dan audiens.",
-      "exp.p1Task2": "Menjadi penghubung utama antara organisasi, media rekanan, dan pembicara eksternal dalam perhelatan seminar nasional.",
-      "exp.p1Task3": "Mengoordinasikan rangkaian acara dan kesepakatan kolaborasi dengan 2 mitra eksternal resmi.",
+      "exp.p1Role": "Public Relations",
+      "exp.p1Task1": "Merencanakan dan memimpin kampanye komunikasi strategis yang menjangkau 90+ mahasiswa dan pemangku kepentingan.",
+      "exp.p1Task2": "Menjadi penghubung utama antara himpunan, mitra media, dan pembicara untuk seminar nasional.",
+      "exp.p1Task3": "Mengoordinasikan alur acara dan menjalin kerja sama dengan 2 mitra eksternal resmi.",
+
+      // Kartu 2: Mentor
       "exp.p2Period": "Okt 2026 – Sekarang",
-      "exp.p2Task1": "Membimbing anggota klub dalam mengeksplorasi dan memvalidasi ide bisnis, riset pasar komprehensif hingga business plan.",
-      "exp.p2Task2": "Membagikan materi dan memfasilitasi sesi interaktif strategi pengembangan usaha kepada 50+ peserta aktif.",
-      "exp.p2Task3": "Memberikan feedback kritis pada presentasi pitch deck anggota untuk program P2MW, kompetisi esai, dan business case.",
+      "exp.p2Role": "Mentor",
+      "exp.p2Task1": "Membimbing anggota klub dari riset pasar, validasi ide, sampai penyusunan rencana bisnis.",
+      "exp.p2Task2": "Memberikan workshop interaktif tentang strategi pertumbuhan kepada 50+ mahasiswa wirausaha aktif.",
+      "exp.p2Task3": "Memberi masukan pada pitch deck untuk P2MW, essay competition, dan business case nasional.",
+
+      // Kartu 3: Social Media Team
       "exp.p3Period": "Okt 2026 – Sekarang",
-      "exp.p3Role": "Tim Media Sosial",
-      "exp.p3Task1": "Merancang konsep, copywriting, serta penjadwalan konten promosi visual dan dokumentasi real-time di kanal media sosial.",
-      "exp.p3Task2": "Mempublikasikan info registrasi, guideline kompetisi, dan pengumuman pemenang sehingga meningkatkan partisipasi peserta.",
+      "exp.p3Role": "Social Media Team",
+      "exp.p3Note": "Panitia Pelaksana",
+      "exp.p3Task1": "Merancang konsep konten, copywriting, dan kalender visual untuk liputan real-time di berbagai platform.",
+      "exp.p3Task2": "Mempublikasikan pengumuman pendaftaran dan panduan agar jumlah peserta maksimal.",
+
+      // Kartu 4: Podcast Panelist
+      "exp.p4Period": "Okt 2026",
+      "exp.p4Role": "Panelist 1",
+      "exp.p4Task1": "Membahas \"Humanising Education & Sustaining Integrity in the Digital Age\" dalam sesi diskusi lintas negara.",
+      "exp.p4Task2": "Menyampaikan sudut pandang tentang digitalisasi dan AI kepada 30 peserta.",
+
+      // Kartu 5: Exchange Student
+      "exp.p5Period": "Agu 2026 – Nov 2026 (1 Agu – 1 Nov 2026, 3 bulan)",
+      "exp.p5Role": "Exchange Student",
+      "exp.p5Task1": "Mengikuti kegiatan akademik dan budaya bersama mahasiswa Unisel selama pertukaran 3 bulan.",
+      "exp.p5Task2": "Mengembangkan kemampuan komunikasi lintas budaya dan jaringan internasional.",
+
+      // Kartu 6: Event Committee Member
+      "exp.p6Period": "13 Des 2025",
+      "exp.p6Note": "Seminar Committee (Panitia Pelaksana)",
+      "exp.p6Role": "Event Committee Member, Event Division",
+      "exp.p6Task1": "Merancang konsep acara, teknis acara, dan jalannya acara.",
+      "exp.p6Task2": "Mengoordinasikan kelancaran pelaksanaan seminar pada hari acara.",
+
+      // Kartu 7: Master of Ceremony
+      "exp.p7Period": "2025 – 2026",
+      "exp.p7Role": "Master of Ceremony",
+      "exp.p7Task1": "Memandu seminar \"Technology with a Soul in the Digital Era\" dengan 90 peserta.",
+      "exp.p7Task2": "Memandu Rapat Anggota Tahunan UKM Taekwondo.",
+      "exp.p7Task3": "Membangun personal branding lewat kemampuan public speaking.",
 
       "edu.tag": "LATAR BELAKANG",
       "edu.title": "Pendidikan Formal",
@@ -249,20 +296,67 @@ document.addEventListener('DOMContentLoaded', () => {
       "projects.watchVideoModal": "Watch Presentation Video on YouTube ↗",
 
       "exp.tag": "TRACK RECORD",
-      "exp.title": "Organizational Leadership",
-      "exp.subtitle": "Public communications, community mentorship, and academic event execution",
+      "exp.title": "Experience & Leadership",
+      "exp.subtitle": "Leadership roles, public speaking, event committees, and active contributions across academic and international communities",
+      "exp.filterAll": "All",
+      "exp.filterOrg": "Organizations",
+      "exp.filterComm": "Committees",
+      "exp.filterSpeak": "Public Speaking",
+      "exp.filterIntl": "International",
+      "exp.catOrg": "Organization",
+      "exp.catComm": "Committees",
+      "exp.catSpeak": "Public Speaking",
+      "exp.catIntl": "International",
+      "exp.showMore": "Show more",
+      "exp.showLess": "Show less",
+      "exp.listenBtn": "Listen ↗",
+
+      // Card 1: Public Relations
       "exp.p1Period": "Sep 2026 – Present",
+      "exp.p1Role": "Public Relations",
       "exp.p1Task1": "Planned and spearheaded strategic communication campaigns reaching 90+ students and stakeholders.",
       "exp.p1Task2": "Served as the main liaison connecting the student association, media partners, and keynote speakers for national seminars.",
       "exp.p1Task3": "Coordinated event workflows and sealed collaboration agreements with 2 official external partners.",
+
+      // Card 2: Mentor
       "exp.p2Period": "Oct 2026 – Present",
+      "exp.p2Role": "Mentor",
       "exp.p2Task1": "Mentored club peers through market research, ideation validation, and end-to-end business plan formulation.",
       "exp.p2Task2": "Delivered interactive workshops on growth strategies to 50+ active student entrepreneurs.",
       "exp.p2Task3": "Provided critique on pitch decks for P2MW funding, essay challenges, and national business case competitions.",
+
+      // Card 3: Social Media Team
       "exp.p3Period": "Oct 2026 – Present",
       "exp.p3Role": "Social Media Team",
+      "exp.p3Note": "Organizing Committee",
       "exp.p3Task1": "Crafted content concepts, copywriting, and visual calendars for real-time coverage across social platforms.",
       "exp.p3Task2": "Published registration announcements and guidelines, maximizing participant turnouts.",
+
+      // Card 4: Podcast Panelist
+      "exp.p4Period": "Oct 2026",
+      "exp.p4Role": "Panelist 1",
+      "exp.p4Task1": "Discussed \"Humanising Education & Sustaining Integrity in the Digital Age\" in a cross-country session.",
+      "exp.p4Task2": "Shared perspectives on digitalization and AI with 30 participants.",
+
+      // Card 5: Exchange Student
+      "exp.p5Period": "Aug 2026 – Nov 2026 (1 Aug – 1 Nov 2026, 3 months)",
+      "exp.p5Role": "Exchange Student",
+      "exp.p5Task1": "Joined academic and cultural programs alongside Unisel students during a 3-month exchange.",
+      "exp.p5Task2": "Built cross-cultural communication skills and an international network.",
+
+      // Card 6: Event Committee Member
+      "exp.p6Period": "13 Dec 2025",
+      "exp.p6Note": "Seminar Committee (Organizing Committee)",
+      "exp.p6Role": "Event Committee Member, Event Division",
+      "exp.p6Task1": "Designed the event concept, technical setup, and run-of-show.",
+      "exp.p6Task2": "Coordinated the smooth execution of the seminar on the event day.",
+
+      // Card 7: Master of Ceremony
+      "exp.p7Period": "2025 – 2026",
+      "exp.p7Role": "Master of Ceremony",
+      "exp.p7Task1": "Hosted the seminar \"Technology with a Soul in the Digital Era\" for 90 attendees.",
+      "exp.p7Task2": "Hosted the Annual Member Meeting (Rapat Anggota Tahunan) of the Taekwondo student activity unit.",
+      "exp.p7Task3": "Built a personal brand through professional public speaking.",
 
       "edu.tag": "BACKGROUND",
       "edu.title": "Formal Education",
@@ -294,6 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   let currentLang = localStorage.getItem('portfolio_lang') || 'id';
+  let isExpExpanded = false;
 
   function applyLanguage(lang) {
     currentLang = lang;
@@ -313,6 +408,14 @@ document.addEventListener('DOMContentLoaded', () => {
         el.textContent = translations[lang][key];
       }
     });
+
+    // Update dynamic expMoreText
+    const expMoreText = document.getElementById('expMoreText');
+    if (expMoreText) {
+      expMoreText.textContent = isExpExpanded
+        ? (translations[lang]["exp.showLess"] || "Tutup sebagian")
+        : (translations[lang]["exp.showMore"] || "Lihat lebih banyak");
+    }
 
     // Update placeholders
     const nameInput = document.getElementById('senderName');
@@ -534,6 +637,121 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // ===================================================================
+  // 6B. EXPERIENCE CATEGORY FILTERING & SHOW MORE (PAGINATION)
+  // ===================================================================
+  const expFilterBtns = document.querySelectorAll('.exp-filter-btn');
+  const expCards = document.querySelectorAll('.exp-card');
+  const btnExpMore = document.getElementById('btnExpMore');
+  const expMoreText = document.getElementById('expMoreText');
+  const expMoreWrapper = document.querySelector('.exp-more-wrapper');
+
+  let currentExpFilter = 'all';
+  const INITIAL_EXP_VISIBLE = 4;
+
+  // [PENGATURAN LINK PODCAST UNTUK KARTU 4]
+  // Masukkan link podcast (Spotify / YouTube) di sini jika sudah ada.
+  // Jika dikosongkan (""), tombol "Dengarkan" otomatis tersembunyi.
+  const PODCAST_LINK = ""; 
+
+  const podcastListenBtn = document.getElementById('podcastListenBtn');
+  if (podcastListenBtn) {
+    if (PODCAST_LINK && PODCAST_LINK.trim() !== '') {
+      podcastListenBtn.href = PODCAST_LINK;
+      podcastListenBtn.style.display = 'inline-flex';
+    } else {
+      podcastListenBtn.style.display = 'none';
+    }
+  }
+
+  function updateExpCardsDisplay() {
+    let matchIndex = 0;
+    let totalMatching = 0;
+
+    expCards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category') || '';
+      const categoryList = cardCategory.split(' ');
+      const isMatch = currentExpFilter === 'all' || categoryList.includes(currentExpFilter);
+
+      if (isMatch) {
+        totalMatching++;
+        const shouldShow = isExpExpanded || matchIndex < INITIAL_EXP_VISIBLE;
+        matchIndex++;
+
+        if (shouldShow) {
+          card.classList.remove('is-exp-hidden');
+          card.style.display = 'grid';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 30);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(16px)';
+          setTimeout(() => {
+            card.classList.add('is-exp-hidden');
+            card.style.display = 'none';
+          }, 200);
+        }
+      } else {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(16px)';
+        setTimeout(() => {
+          card.classList.add('is-exp-hidden');
+          card.style.display = 'none';
+        }, 200);
+      }
+    });
+
+    // Kontrol visibilitas tombol "Lihat lebih banyak"
+    if (expMoreWrapper) {
+      if (totalMatching > INITIAL_EXP_VISIBLE) {
+        expMoreWrapper.style.display = 'flex';
+        if (expMoreText) {
+          expMoreText.textContent = isExpExpanded
+            ? (translations[currentLang]["exp.showLess"] || 'Tutup sebagian')
+            : (translations[currentLang]["exp.showMore"] || 'Lihat lebih banyak');
+        }
+        if (btnExpMore) {
+          btnExpMore.classList.toggle('is-expanded', isExpExpanded);
+        }
+      } else {
+        expMoreWrapper.style.display = 'none';
+      }
+    }
+  }
+
+  if (expFilterBtns.length > 0) {
+    expFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        expFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        currentExpFilter = btn.getAttribute('data-exp-filter') || 'all';
+        isExpExpanded = false; // Reset pagination saat ganti filter
+        updateExpCardsDisplay();
+      });
+    });
+  }
+
+  if (btnExpMore) {
+    btnExpMore.addEventListener('click', () => {
+      isExpExpanded = !isExpExpanded;
+      updateExpCardsDisplay();
+
+      // Scroll halus ke kartu ke-4 saat user menutup kembali
+      if (!isExpExpanded) {
+        const visibleCards = document.querySelectorAll('.exp-card:not(.is-exp-hidden)');
+        if (visibleCards.length >= 4) {
+          visibleCards[3].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    });
+  }
+
+  // Inisialisasi tampilan awal
+  updateExpCardsDisplay();
 
   // ===================================================================
   // 7. CERTIFICATE LIGHTBOX MODAL
